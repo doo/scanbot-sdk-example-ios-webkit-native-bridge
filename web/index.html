@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scanbot SDK WKWebView Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script>
+        function startDocumentScanner() {
+            const options = {
+                multiPageEnabled: true,
+                bottomBarBackgroundColor: '#0000ff',
+                bottomBarButtonsColor: '#cccccc',
+                cancelButtonTitle: 'Abbrechen',
+                pageCounterButtonTitle: '%d Seite(n)'
+                // TODO Implement mappings for further configs ...
+            };
+            try {
+                webkit.messageHandlers.startDocumentScanner.postMessage(options);
+            } catch(err) {
+                document.getElementById('result').innerHTML = 'Error: ' + JSON.stringify(err);
+            }
+        }
+    
+        function documentScannerCallback(result) {
+            document.getElementById('jsonResult').innerHTML = 'JSON result: ' + JSON.stringify(result);
+            
+            let imagesHtml = "";
+            result.pages.forEach(function(page) {
+                imagesHtml += "<div><img src='"+page.documentPreviewImageFileUri+"' style='width: 70%; padding: 20px'/></div>";
+            });
+            document.getElementById('images').innerHTML = imagesHtml;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Scanbot SDK WKWebView Example</h2>
+        <h3>This is an HTML page</h3>
+        <button class="btn btn-primary" onclick="startDocumentScanner()">
+            Start native Document Scanner
+        </button>
+        <div id="images"></div>
+        <div id="jsonResult"></div>
+    </div>
+</body>
+
+</html>
