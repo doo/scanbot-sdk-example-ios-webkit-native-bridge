@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463F3DB1B0EAB1EC75E7ED90 /* Pods_ScanbotSdkWebKitNativeBridgeExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B4965AEA0206A6E5E6C5BC /* Pods_ScanbotSdkWebKitNativeBridgeExample.framework */; };
 		64E6F248234DCC7A000D7829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6F247234DCC7A000D7829 /* AppDelegate.swift */; };
 		64E6F24A234DCC7A000D7829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6F249234DCC7A000D7829 /* SceneDelegate.swift */; };
 		64E6F24C234DCC7A000D7829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E6F24B234DCC7A000D7829 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060CAAEA322E85C333A19B57 /* Pods-ScanbotSdkWebKitNativeBridgeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanbotSdkWebKitNativeBridgeExample.debug.xcconfig"; path = "Target Support Files/Pods-ScanbotSdkWebKitNativeBridgeExample/Pods-ScanbotSdkWebKitNativeBridgeExample.debug.xcconfig"; sourceTree = "<group>"; };
 		64E6F244234DCC7A000D7829 /* ScanbotSdkWebKitNativeBridgeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanbotSdkWebKitNativeBridgeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E6F247234DCC7A000D7829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64E6F249234DCC7A000D7829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		64E6F250234DCC7B000D7829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E6F253234DCC7B000D7829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E6F255234DCC7B000D7829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B4965AEA0206A6E5E6C5BC /* Pods_ScanbotSdkWebKitNativeBridgeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanbotSdkWebKitNativeBridgeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E341783C4B1963FF4BCCB03D /* Pods-ScanbotSdkWebKitNativeBridgeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanbotSdkWebKitNativeBridgeExample.release.xcconfig"; path = "Target Support Files/Pods-ScanbotSdkWebKitNativeBridgeExample/Pods-ScanbotSdkWebKitNativeBridgeExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463F3DB1B0EAB1EC75E7ED90 /* Pods_ScanbotSdkWebKitNativeBridgeExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40377AD9468141AC76A96B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7B4965AEA0206A6E5E6C5BC /* Pods_ScanbotSdkWebKitNativeBridgeExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64E6F23B234DCC7A000D7829 = {
 			isa = PBXGroup;
 			children = (
 				64E6F246234DCC7A000D7829 /* ScanbotSdkWebKitNativeBridgeExample */,
 				64E6F245234DCC7A000D7829 /* Products */,
+				E0441DBB5A72FF74E17FBA4A /* Pods */,
+				40377AD9468141AC76A96B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = ScanbotSdkWebKitNativeBridgeExample;
 			sourceTree = "<group>";
 		};
+		E0441DBB5A72FF74E17FBA4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				060CAAEA322E85C333A19B57 /* Pods-ScanbotSdkWebKitNativeBridgeExample.debug.xcconfig */,
+				E341783C4B1963FF4BCCB03D /* Pods-ScanbotSdkWebKitNativeBridgeExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E6F258234DCC7B000D7829 /* Build configuration list for PBXNativeTarget "ScanbotSdkWebKitNativeBridgeExample" */;
 			buildPhases = (
+				20C3DF2C1F3772F9DAE93882 /* [CP] Check Pods Manifest.lock */,
 				64E6F240234DCC7A000D7829 /* Sources */,
 				64E6F241234DCC7A000D7829 /* Frameworks */,
 				64E6F242234DCC7A000D7829 /* Resources */,
+				E70B946687D4D3A5420ECDEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20C3DF2C1F3772F9DAE93882 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanbotSdkWebKitNativeBridgeExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E70B946687D4D3A5420ECDEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScanbotSdkWebKitNativeBridgeExample/Pods-ScanbotSdkWebKitNativeBridgeExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScanbotSdkWebKitNativeBridgeExample/Pods-ScanbotSdkWebKitNativeBridgeExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScanbotSdkWebKitNativeBridgeExample/Pods-ScanbotSdkWebKitNativeBridgeExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64E6F240234DCC7A000D7829 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		64E6F259234DCC7B000D7829 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060CAAEA322E85C333A19B57 /* Pods-ScanbotSdkWebKitNativeBridgeExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		64E6F25A234DCC7B000D7829 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E341783C4B1963FF4BCCB03D /* Pods-ScanbotSdkWebKitNativeBridgeExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,18 @@
+PODS:
+  - ScanbotSDK (1.9.6):
+    - ScanbotSDK/NONE (= 1.9.6)
+  - ScanbotSDK/NONE (1.9.6)
+
+DEPENDENCIES:
+  - ScanbotSDK (= 1.9.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ScanbotSDK
+
+SPEC CHECKSUMS:
+  ScanbotSDK: 1cc1899636d612bfc11490da20ed67e7265222c0
+
+PODFILE CHECKSUM: f1f26f1b719db0c95723bf0c3790fc4318931870
+
+COCOAPODS: 1.7.5
